@@ -3,13 +3,15 @@ const { app, BrowserWindow } = require('electron');
 
 function createWindow () {
     const win = new BrowserWindow({
+        titleBarStyle: 'show',
+        icon: 'favicon.ico',
         width: 1920,
         height: 1080,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
     })
-    win.webContents.openDevTools()
+   // win.webContents.openDevTools()
     win.loadFile('index.html')
 }
 
