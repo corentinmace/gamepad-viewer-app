@@ -1,6 +1,7 @@
 ﻿<h1> <img src="favicon.ico" alt="Logo" height="45" width="45" align="top"/> Gamepad-Viewer App</h1>
 
 [![GitHub issues](https://img.shields.io/github/issues/corentinmace/gamepad-viewer-app?style=for-the-badge)](https://github.com/corentinmace/gamepad-viewer-app/issues)
+[![GitHub downlaods](https://img.shields.io/github/downloads/corentinmace/gamepad-viewer-app/total?style=for-the-badge)](https://github.com/corentinmace/gamepad-viewer-app/releases/latest)
 [![GitHub release](https://img.shields.io/github/v/release/corentinmace/gamepad-viewer-app?include_prereleases&style=for-the-badge)](https://github.com/corentinmace/gamepad-viewer-app/releases/latest)
 [![GitHub stars](https://img.shields.io/github/stars/corentinmace/gamepad-viewer-app?style=for-the-badge)](https://github.com/corentinmace/gamepad-viewer-app/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/corentinmace/gamepad-viewer-app/main/LICENSE)
