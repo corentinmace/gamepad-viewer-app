@@ -5,8 +5,10 @@ function createWindow () {
     const win = new BrowserWindow({
         titleBarStyle: 'show',
         icon: 'favicon.ico',
-        width: 1920,
-        height: 1080,
+        width: 900,
+        height: 800,
+        resizable: false,
+        alwaysOnTop: true,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
