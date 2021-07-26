@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Gamepad Viewer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row row-cols-5">
+          <div class="col">
+            <h1>Buttons</h1>
+            <div>
+              <hr>
+              <h4>Button Down</h4>
+              <p id="button-down">Not Pressed</p>
+              <hr>
+              <h4>Button Right</h4>
+              <p id="button-right">Not Pressed</p>
+              <hr>
+              <h4>Button Up</h4>
+              <p id="button-up">Not Pressed</p>
+              <hr>
+              <h4>Button Left</h4>
+              <p id="button-left">Not Pressed</p>
+              <hr>
+              <h4>Start</h4>
+              <p id="button-start">Not Pressed</p>
+              <hr>
+              <h4>Select</h4>
+              <p id="button-select">Not Pressed</p>
+
+            </div>
+          </div>
+          <div class="col">
+            <h1>Buttons</h1>
+            <div>
+              <hr>
+              <h4>Bumper Left</h4>
+              <p id="bumper-left">Not Pressed</p>
+              <hr>
+              <h4>Bumper Right</h4>
+              <p id="bumper-right">Not Pressed</p>
+              <hr>
+              <h4>Trigger Left</h4>
+              <p id="trigger-left">Not Pressed</p>
+              <hr>
+              <h4>Trigger Right</h4>
+              <p id="trigger-right">Not Pressed</p>
+              <hr>
+              <h4>Home (Layout Switch)</h4>
+              <p id="button-home">Not Pressed</p>
+              <hr>
+              <h4>Screenshot (Layout Switch)</h4>
+              <p id="button-screen">Not Pressed</p>
+
+            </div>
+          </div>
+          
+          <div class="col">
+            <h1>D-Pad</h1>
+            <div>
+              <hr>
+              <h4>D-Pad Up</h4>
+              <p id="dpad-up">Not Pressed</p>
+              <hr>
+              <h4>D-Pad Down</h4>
+              <p id="dpad-down">Not Pressed</p>
+              <hr>
+              <h4>D-Pad Left</h4>
+              <p id="dpad-left">Not Pressed</p>
+              <hr>
+              <h4>D-Pad Right</h4>
+              <p id="dpad-right">Not Pressed</p>
+            </div>
+          </div>
+          <div class="col">
+            <h1>Stick Left</h1>
+            <div>
+              <hr>
+              <h4>Left Stick Button</h4>
+              <p id="button-ls">Not Pressed</p>
+              <hr>
+              <h4>Horizontal Axis</h4>
+              <p id="ls-horizontal">0</p>
+              <hr>
+              <h4>Vertical Axis</h4>
+              <p id="ls-vertical">0</p>
+            </div>
+          </div>
+          <div class="col">
+            <h1>Stick Right</h1>
+            <div>
+              <hr>
+              <h4>Right Stick Button</h4>
+              <p id="button-rs">Not Pressed</p>
+              <hr>
+              <h4>Horizontal Axis</h4>
+              <p id="rs-horizontal">0</p>
+              <hr>
+              <h4>Vertical Axis</h4>
+              <p id="rs-vertical">0</p>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
