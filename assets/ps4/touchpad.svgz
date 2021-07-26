@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="263.9px" height="151.2px" viewBox="-827 465.8 263.9 151.2" style="enable-background:new -827 465.8 263.9 151.2;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#4C4C4C;}
+	.st2{fill:#EDEDED;}
+	.st3{fill:#F7F7F7;}
+	.st4{opacity:0.12;}
+	.st5{fill:url(#SVGID_1_);}
+</style>
+<pattern  x="-827" y="617" width="71" height="71" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_5" viewBox="0 -71 71 71" style="overflow:visible;">
+	<g>
+		<polygon class="st0" points="0,-71 71,-71 71,0 0,0 		"/>
+		<path class="st1" d="M41.8-35.5c0,3.5-2.8,6.3-6.3,6.3c-3.5,0-6.3-2.8-6.3-6.3s2.8-6.3,6.3-6.3C39-41.8,41.8-39,41.8-35.5z"/>
+	</g>
+</pattern>
+<g>
+	<path class="st2" d="M-563.2,471.4c-0.4-3.2-3.3-5.6-6.5-5.6l0,0H-695h0h-125.3l0,0c-3.2,0-6.1,2.3-6.5,5.6
+		c-0.1,0.7-0.1,1.4-0.1,2.1v127.4c0,8.9,7.2,16.1,16.1,16.1h115.8h0h115.8c8.9,0,16.1-7.2,16.1-16.1V473.5
+		C-563.1,472.7-563.1,472-563.2,471.4z"/>
+	<g>
+		<path class="st3" d="M-567.6,467.7c0-1-0.8-1.9-1.9-1.9H-695h0h-125.6c-1,0-1.9,0.8-1.9,1.9l0,6v123.2c0,8.6,7,15.6,15.6,15.6
+			h111.9h0h111.9c8.6,0,15.6-7,15.6-15.6V473.7L-567.6,467.7z"/>
+		<g class="st4">
+			
+				<pattern  id="SVGID_1_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1017 0 0 0.1017 -7106.0005 -7406.6733)"  class="st4">
+			</pattern>
+			<path class="st5" d="M-822.5,596.9c0,8.6,7,15.6,15.6,15.6h111.9h0h111.9c8.6,0,15.6-7,15.6-15.6V490.3h-254.9V596.9z"/>
+		</g>
+	</g>
+</g>
+</svg>

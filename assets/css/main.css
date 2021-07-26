@@ -1,0 +1,19 @@
+.controller {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /*  display: none; */
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+}
+
+.pressed {
+    opacity: 1;
+}
+
+main {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+}

@@ -19,10 +19,10 @@
         let button_5 = document.getElementById("bumper-right");
         let button_6 = document.getElementById("trigger-left");
         let button_7 = document.getElementById("trigger-right");
-        let button_8 = document.getElementById("button-start");
-        let button_9 = document.getElementById("button-select");
-        let button_16 = document.getElementById("button-home");
-        let button_17 = document.getElementById("button-screen");
+        let button_8 = document.getElementById("button-select");
+        let button_9 = document.getElementById("button-start");
+        let button_16 = document.getElementById("button-meta");
+        let button_17 = document.getElementById("button-touchpad");
         
         // Sticks Variables
         
@@ -50,55 +50,58 @@
             let gamepads = navigator.getGamepads();
           for (let i = 0; i < gamepads.length; i++) {
             if (gamepads[i] !== null) {
-              console.log("")
-              console.log("%c RELOAD", "color: red; font-size: 30px")
-              console.log(`Player ${i} : ${gamepads[i].id }`);
-              //console.log(gamepads[i])
-              console.log("")
-              console.log("%c BUTTONS", "color: gold; font-size: 20px; font-weight: bold")
-              console.log("Button Down", gamepads[i].buttons[0])
-              console.log("Button Right", gamepads[i].buttons[1])
-              console.log("Button Up", gamepads[i].buttons[2])
-              console.log("Button Left", gamepads[i].buttons[3])
-              console.log("Bumper Left", gamepads[i].buttons[4])
-              console.log("Bumper Right", gamepads[i].buttons[5])
-              console.log("Trigger Left", gamepads[i].buttons[6])
-              console.log("Trigger Right", gamepads[i].buttons[7])
-              console.log("Start", gamepads[i].buttons[8])
-              console.log("Select", gamepads[i].buttons[9])
-              console.log("Left Stick Button", gamepads[i].buttons[10])
-              console.log("Right Stick Button", gamepads[i].buttons[11])
-              console.log("(Layout Switch) Home", gamepads[i].buttons[16])
-              console.log("(Layout Switch) Screenshot", gamepads[i].buttons[17])
-              console.log("")
-              console.log("%c D-PAD", "color: gold; font-size: 20px; font-weight: bold")
-              console.log("D-Pad Up", gamepads[i].buttons[12])
-              console.log("D-Pad Down", gamepads[i].buttons[13])
-              console.log("D-Pad Left", gamepads[i].buttons[14])
-              console.log("D-Pad Right", gamepads[i].buttons[15])
-              console.log("")
-              console.log("%c STICKS", "color: gold; font-size: 20px; font-weight: bold")
-              console.log("(-1 = Left, 0 = Neutral, 1 = Right)")
-              console.log("(-1 = Up, 0 = Neutral, 1 = Down)")
-              console.log("Left Stick Horizontal Axis", gamepads[i].axes[0])
-              console.log("Left Stick Vertical Axis", gamepads[i].axes[1])
-              console.log("Right Stick Horizontal Axis", gamepads[i].axes[2])
-              console.log("Left Stick Vertical Axis", gamepads[i].axes[3])
-              console.log("%c ____________________________", "color: red; font-size: 30px")
+            //   console.log("")
+            //   console.log("%c RELOAD", "color: red; font-size: 30px")
+            //   console.log(`Player ${i} : ${gamepads[i].id }`);
+            //   //console.log(gamepads[i])
+            //   console.log("")
+            //   console.log("%c BUTTONS", "color: gold; font-size: 20px; font-weight: bold")
+            //   console.log("Button Down", gamepads[i].buttons[0])
+            //   console.log("Button Right", gamepads[i].buttons[1])
+            //   console.log("Button Up", gamepads[i].buttons[2])
+            //   console.log("Button Left", gamepads[i].buttons[3])
+            //   console.log("Bumper Left", gamepads[i].buttons[4])
+            //   console.log("Bumper Right", gamepads[i].buttons[5])
+            //   console.log("Trigger Left", gamepads[i].buttons[6])
+            //   console.log("Trigger Right", gamepads[i].buttons[7])
+            //   console.log("Start", gamepads[i].buttons[8])
+            //   console.log("Select", gamepads[i].buttons[9])
+            //   console.log("Left Stick Button", gamepads[i].buttons[10])
+            //   console.log("Right Stick Button", gamepads[i].buttons[11])
+            //   console.log("(Layout Switch) Home", gamepads[i].buttons[16])
+            //   console.log("(Layout Switch) Screenshot", gamepads[i].buttons[17])
+            //   console.log("")
+            //   console.log("%c D-PAD", "color: gold; font-size: 20px; font-weight: bold")
+            //   console.log("D-Pad Up", gamepads[i].buttons[12])
+            //   console.log("D-Pad Down", gamepads[i].buttons[13])
+            //   console.log("D-Pad Left", gamepads[i].buttons[14])
+            //   console.log("D-Pad Right", gamepads[i].buttons[15])
+            //   console.log("")
+            //   console.log("%c STICKS", "color: gold; font-size: 20px; font-weight: bold")
+            //   console.log("(-1 = Left, 0 = Neutral, 1 = Right)")
+            //   console.log("(-1 = Up, 0 = Neutral, 1 = Down)")
+            //   console.log("Left Stick Horizontal Axis", gamepads[i].axes[0])
+            //   console.log("Left Stick Vertical Axis", gamepads[i].axes[1])
+            //   console.log("Right Stick Horizontal Axis", gamepads[i].axes[2])
+            //   console.log("Left Stick Vertical Axis", gamepads[i].axes[3])
+            //   console.log("%c ____________________________", "color: red; font-size: 30px")
             
-            ls_horizontal.textContent = gamepads[i].axes[0]
-            ls_vertical.textContent = gamepads[i].axes[1]
-            rs_horizontal.textContent = gamepads[i].axes[2]
-            rs_vertical.textContent = gamepads[i].axes[3]
+            // ls_horizontal.textContent = gamepads[i].axes[0]
+            // ls_vertical.textContent = gamepads[i].axes[1]
+            // rs_horizontal.textContent = gamepads[i].axes[2]
+            // rs_vertical.textContent = gamepads[i].axes[3]
             
             for (let j = 0; j < gamepads[i].buttons.length; j++) {
 
                // console.log(`Button ${j} pressed : ${gamepads[i].buttons[j].pressed}`)
 
                 if (gamepads[i].buttons[j].pressed === true) {
-                    buttons[j].textContent = "Pressed"
+                   // buttons[j].textContent = "Pressed"
+                   buttons[j].classList.add("pressed")
                 } else {
-                    buttons[j].textContent = "Not Pressed"
+                   // buttons[j].textContent = "Not Pressed"
+                   buttons[j].classList.remove("pressed")
+                   
                 }
                 
              }

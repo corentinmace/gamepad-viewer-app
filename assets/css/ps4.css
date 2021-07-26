@@ -1,0 +1,225 @@
+.controller.ps4 {
+    background: url(../ps4/base.svgz);
+    height: 598px;
+    width: 806px;
+}
+
+.trigger.left {
+    float: left;
+}
+
+.trigger.right {
+    float: right;
+    background-position-x: 99px;
+}
+
+.triggers {
+    width: 588px;
+    height: 90px;
+    position: absolute;
+    left: 109px;
+}
+
+.trigger {
+    width: 99px;
+    height: 100%;
+    background: url(../ps4/triggers.svgz);
+    opacity: 0;
+}
+
+.bumpers {
+    position: absolute;
+    width: 588px;
+    height: 23px;
+    left: 109px;
+    top: 94px;
+}
+
+.bumper {
+    width: 99px;
+    height: 23px;
+    background: url(../ps4/bumper.svgz) no-repeat;
+    opacity: 0;
+}
+
+.bumper.left {
+    float: left;
+}
+
+.bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.touchpad {
+    width: 262px;
+    height: 151px;
+    position: absolute;
+    left: 272px;
+    top: 122px;
+}
+
+.touchpad.pressed {
+    background: url(../ps4/touchpad.svgz) no-repeat center;
+}
+
+.meta {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+}
+
+.meta.pressed {
+    background: url(../ps4/meta.svgz) no-repeat center;
+}
+
+.arrows {
+    position: absolute;
+    width: 352px;
+    height: 46px;
+    top: 142px;
+    left: 227px;
+}
+
+.back {
+    float: left;
+}
+
+.start {
+    float: right;
+    background-position: 28px 0;
+}
+
+.back, .start {
+    background: url(../ps4/start.svgz);
+    width: 28px;
+    height: 46px;
+    opacity: 0;
+}
+
+.abxy {
+    position: absolute;
+    width: 170px;
+    height: 171px;
+    top: 159px;
+    left: 567px;
+}
+
+.button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(../ps4/face.svgz);
+}
+
+.button.pressed {
+    background-position-y: 55px;
+}
+
+.a {
+    background-position: 0 0;
+    bottom: 0;
+    left: 58px;
+}
+
+.b {
+    background-position: -57px 0;
+    top: 58px;
+    right: 0px;
+}
+
+.x {
+    background-position: -113px 0;
+    top: 58px;
+}
+
+.y {
+    background-position: 55px 0;
+    left: 58px;
+}
+
+.sticks {
+    position: absolute;
+    width: 361px;
+    height: 105px;
+    top: 308px;
+    left: 228px;
+}
+
+.stick {
+    position: absolute;
+    background: url(../ps4/sticks.svgz);
+    height: 94px;
+    width: 94px;
+}
+
+.stick.left {
+    top: 0;
+    left: 0;
+}
+
+.stick.right {
+    top: calc(100% - 105px);
+    left: calc(100% - 105px);
+}
+
+.stick.pressed.left {
+    background-position-x: -96px;
+}
+
+.stick.pressed.right {
+    background-position-x: -192px;
+}
+
+.dpad {
+    position: absolute;
+    width: 125px;
+    height: 126px;
+    top: 181px;
+    left: 92px;
+}
+
+.face {
+    background: url(../ps4/dpad.svgz);
+    position: absolute;
+}
+
+.face.up, .face.down {
+    width: 36px;
+    height: 52px;
+}
+
+.face.up {
+    left: 44px;
+    top: 0;
+    background-position: -37px 0px;
+}
+
+.face.down {
+    left: 44px;
+    bottom: 0;
+    background-position: 0px 0;
+}
+
+.face.left, .face.right {
+    width: 52px;
+    height: 36px;
+}
+
+.face.left {
+    top: 45px;
+    left: 0;
+    background-position: 104px 0;
+}
+
+.face.right {
+    top: 45px;
+    right: 0px;
+    background-position: 52px 0;
+}
+
+.face.pressed {
+    background-position-y: 52px;
+}

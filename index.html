@@ -7,10 +7,54 @@
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Gamepad Viewer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/ps4.css">
+    <link rel="stylesheet" href="assets/css/xbox-one.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="controller ps4">
+        <div class="triggers">
+          <span id="trigger-left" class="trigger left" style: opacity: 0;></span>
+          <span id="trigger-right" class="trigger right" style: opacity: 0;></span>
+          <!-- <span class="trigger-button left"></span>
+          <span class="trigger-button right"></span> -->
+        </div>
+
+        <div class="bumpers">
+          <span id="bumper-left" class="bumper left"></span>
+          <span id="bumper-right" class="bumper right"></span>
+        </div>
+
+        <div id="button-touchpad" class="touchpad"></div>
+
+        <div id="button-meta" class="meta"></div>
+
+        <div class="arrows">
+          <span id="button-select" class="back"></span>
+          <span id="button-start" class="start"></span>
+        </div>
+
+        <div class="abxy">
+          <span id="button-down" class="button a"></span>
+          <span id="button-right" class="button b"></span>
+          <span id="button-left" class="button x"></span>
+          <span id="button-up" class="button y"></span>
+        </div>
+
+        <div class="sticks">
+          <span id="button-ls" class="stick left" style="margin-left: 0px; margin-top: 0px; transform: rotateX(0deg) rotateY(0deg);"></span>
+          <span id="button-rs" class="stick right" style="margin-left: 0px; margin-top: 0px; transform: rotateX(0deg) rotateY(0deg);"></span>
+        </div>
+
+        <div class="dpad">
+          <span id="dpad-up" class="face up"></span>
+          <span id="dpad-down" class="face down"></span>
+          <span id="dpad-left" class="face left"></span>
+          <span id="dpad-right" class="face right"></span>
+        </div>
+      </div>
+      <!-- <div class="container">
         <div class="row row-cols-5">
           <div class="col">
             <h1>Buttons</h1>
@@ -52,11 +96,11 @@
               <h4>Trigger Right</h4>
               <p id="trigger-right">Not Pressed</p>
               <hr>
-              <h4>Home (Layout Switch)</h4>
-              <p id="button-home">Not Pressed</p>
+              <h4>Meta</h4>
+              <p id="button-meta">Not Pressed</p>
               <hr>
-              <h4>Screenshot (Layout Switch)</h4>
-              <p id="button-screen">Not Pressed</p>
+              <h4>Touchpad</h4>
+              <p id="button-touchpad">Not Pressed</p>
 
             </div>
           </div>
@@ -109,7 +153,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="controller.js"></script>
