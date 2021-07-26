@@ -1,2 +1,10 @@
+controller.js
+favicon.ico
+index.html
+main.js
+package-lock.json
+package.json
+preload.js
 /node_modules
-out/
+/out
+/!Installer
