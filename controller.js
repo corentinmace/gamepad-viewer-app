@@ -1,13 +1,21 @@
         window.addEventListener("gamepadconnected", (event) => {
             console.log("A gamepad connected:");
+            ps4_controller.classList.add("display");
+            no_controller.classList.remove("display")
             console.log(event.gamepad);
         });
 
         window.addEventListener("gamepaddisconnected", (event) => {
             console.log("A gamepad disconnected:");
+            no_controller.classList.add("display")
+            ps4_controller.classList.remove("display");
+            xboxone_controller.classList.remove("display");
             console.log(event.gamepad);
         });
 
+        let no_controller = document.getElementById("no-controller")
+        let ps4_controller = document.getElementById("ps4");
+        let xboxone_controller = document.getElementById("xbox-one")
         
         // Buttons Variables 
         
