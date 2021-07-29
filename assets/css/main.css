@@ -39,8 +39,9 @@ main {
 #controller-select {
     align-self: flex-start;
     display: none;
-    justify-content: space-evenly;
-    width: 13%;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 2.5%;
     top: 10px;
     position: absolute;
 }
@@ -53,4 +54,23 @@ main {
 #controller-select img {
     opacity: 1;
     transition-duration: 0.5s;
+}
+
+#controllers-selection {
+    width: 9%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: 1px solid white;
+	width: 60px;
+	height: 35px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
 }

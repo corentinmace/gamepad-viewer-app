@@ -1,4 +1,5 @@
-        window.addEventListener("gamepadconnected", (event) => {
+ 
+     window.addEventListener("gamepadconnected", (event) => {
             console.log("A gamepad connected:");
             ps4_controller.classList.add("display");
             controller_select.classList.add("display");
@@ -65,6 +66,8 @@
         
         let buttons = [button_0,button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,button_17]
         
+        let background = document.getElementById("background")
+
         setInterval(function checkGamepad()
         {
             let gamepads = navigator.getGamepads();
@@ -138,5 +141,9 @@
             
 
             }
+            background.style.backgroundColor = document.getElementById("colorPicker").value
+
         }, 16.7)
         // 16.7ms = 1 frame
+        
+

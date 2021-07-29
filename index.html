@@ -13,15 +13,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
+    <main id="background">
       <div id="controller-select">
-        <a onclick="select_ps4()">
-          <img src="assets/ps4/logo.svg" alt="logo-ps4" width="30px" height="30px">
+        <div id="controllers-selection">
+          <img src="assets/ps4/logo.svg" alt="logo-ps4" width="35px" height="35px">
         </a>
         <a onclick="select_xbox_one()">
-          <img src="assets/xbox-one/logo.svg" alt="logo-xbox-one" width="30px" height="30px">
+          <img src="assets/xbox-one/logo.svg" alt="logo-xbox-one" width="35px" height="35px">
         </a>
+        </div>
+        <div>
+          <input type="color" id="colorPicker" value="#0000ff">
+        </div>
       </div>
+ 
       <div id="no-controller" class="display alert alert-warning">No controller detected</div>
       <div id="xbox-one" class="controller xbox-one">
         <div class="triggers">
