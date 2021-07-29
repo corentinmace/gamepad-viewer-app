@@ -63,7 +63,6 @@
         let button_14 = document.getElementsByName("dpad-left");
         let button_15 = document.getElementsByName("dpad-right");
         
-        console.log(button_0)
         let buttons = [button_0,button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,button_17]
         
         setInterval(function checkGamepad()
@@ -106,26 +105,31 @@
             //   console.log("Right Stick Horizontal Axis", gamepads[i].axes[2])
             //   console.log("Left Stick Vertical Axis", gamepads[i].axes[3])
             //   console.log("%c ____________________________", "color: red; font-size: 30px")
-            
-            // ls_horizontal.textContent = gamepads[i].axes[0]
-            // ls_vertical.textContent = gamepads[i].axes[1]
-            // rs_horizontal.textContent = gamepads[i].axes[2]
-            // rs_vertical.textContent = gamepads[i].axes[3]
+
+            buttons[10][0].style.marginLeft = `${gamepads[i].axes[0] * 22}px`
+            buttons[10][0].style.marginTop = `${gamepads[i].axes[1] * 22}px`
+            buttons[10][0].style.transform = `rotateY(${gamepads[i].axes[0] * 22}deg) rotateX(${gamepads[i].axes[1] * -22}deg)`
+
+            buttons[11][0].style.marginLeft = `${gamepads[i].axes[2] * 22}px`
+            buttons[11][0].style.marginTop = `${gamepads[i].axes[3] * 22}px`
+            buttons[11][0].style.transform = `rotateY(${gamepads[i].axes[2] * 22}deg) rotateX(${gamepads[i].axes[3] * -22}deg)`
+           
+            buttons[10][1].style.marginLeft = `${gamepads[i].axes[0] * 22}px`
+            buttons[10][1].style.marginTop = `${gamepads[i].axes[1] * 22}px`
+            buttons[10][1].style.transform = `rotateY(${gamepads[i].axes[0] * 22}deg) rotateX(${gamepads[i].axes[1] * -22}deg)`
+
+            buttons[11][1].style.marginLeft = `${gamepads[i].axes[2] * 22}px`
+            buttons[11][1].style.marginTop = `${gamepads[i].axes[3] * 22}px`
+            buttons[11][1].style.transform = `rotateY(${gamepads[i].axes[2] * 22}deg) rotateX(${gamepads[i].axes[3] * -22}deg)`
             
             for (let j = 0; j < gamepads[i].buttons.length; j++) {
 
-               // console.log(`Button ${j} pressed : ${gamepads[i].buttons[j].pressed}`)
-
                 if (gamepads[i].buttons[j].pressed === true) {
-                   // buttons[j].textContent = "Pressed"
-                   buttons[j][0].classList.add("pressed")
-                   buttons[j][1].classList.add("pressed")
-                  // buttons[j][1].innerText = "Pressed"
+                    buttons[j][0].classList.add("pressed")
+                    buttons[j][1].classList.add("pressed")
                 } else {
-                   // buttons[j].textContent = "Not Pressed"
                    buttons[j][0].classList.remove("pressed")
                    buttons[j][1].classList.remove("pressed")
-                 //  buttons[j][1].innerText = "Not Pressed"
                 }
                 
              }
