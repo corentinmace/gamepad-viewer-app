@@ -12,6 +12,11 @@
     display: block;
 }
 
+#controller-select.display {
+    display: flex;
+}
+
+
 .pressed {
     opacity: 1;
 }
@@ -20,9 +25,32 @@ main {
     background-color: blue;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #no-controller {
     text-align: center;
     display: none;
+}
+
+#controller-select {
+    align-self: flex-start;
+    display: none;
+    justify-content: space-evenly;
+    width: 13%;
+    top: 10px;
+    position: absolute;
+}
+
+#controller-select img:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+#controller-select img {
+    opacity: 1;
+    transition-duration: 0.5s;
 }

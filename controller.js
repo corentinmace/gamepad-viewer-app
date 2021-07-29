@@ -1,56 +1,69 @@
         window.addEventListener("gamepadconnected", (event) => {
             console.log("A gamepad connected:");
             ps4_controller.classList.add("display");
-            no_controller.classList.remove("display")
+            controller_select.classList.add("display");
+            no_controller.classList.remove("display");
             console.log(event.gamepad);
         });
 
         window.addEventListener("gamepaddisconnected", (event) => {
             console.log("A gamepad disconnected:");
-            no_controller.classList.add("display")
+            no_controller.classList.add("display");
+            controller_select.classList.remove("display");
             ps4_controller.classList.remove("display");
             xboxone_controller.classList.remove("display");
             console.log(event.gamepad);
         });
 
+        function select_ps4() {
+            ps4_controller.classList.add("display")
+            xboxone_controller.classList.remove("display")
+        }
+
+        function select_xbox_one() {
+            ps4_controller.classList.remove("display")
+            xboxone_controller.classList.add("display")
+        }
+
         let no_controller = document.getElementById("no-controller")
+        let controller_select = document.getElementById("controller-select")
         let ps4_controller = document.getElementById("ps4");
         let xboxone_controller = document.getElementById("xbox-one")
         
         // Buttons Variables 
         
-        let button_0 = document.getElementById("button-down");
-        let button_1 = document.getElementById("button-right");
-        let button_2 = document.getElementById("button-left");
-        let button_3 = document.getElementById("button-up");
-        let button_4 = document.getElementById("bumper-left");
-        let button_5 = document.getElementById("bumper-right");
-        let button_6 = document.getElementById("trigger-left");
-        let button_7 = document.getElementById("trigger-right");
-        let button_8 = document.getElementById("button-select");
-        let button_9 = document.getElementById("button-start");
-        let button_16 = document.getElementById("button-meta");
-        let button_17 = document.getElementById("button-touchpad");
+        let button_0 = document.getElementsByName("button-down");
+        let button_1 = document.getElementsByName("button-right");
+        let button_2 = document.getElementsByName("button-left");
+        let button_3 = document.getElementsByName("button-up");
+        let button_4 = document.getElementsByName("bumper-left");
+        let button_5 = document.getElementsByName("bumper-right");
+        let button_6 = document.getElementsByName("trigger-left");
+        let button_7 = document.getElementsByName("trigger-right");
+        let button_8 = document.getElementsByName("button-select");
+        let button_9 = document.getElementsByName("button-start");
+        let button_16 = document.getElementsByName("button-meta");
+        let button_17 = document.getElementsByName("button-touchpad");
         
         // Sticks Variables
         
-        let button_10 = document.getElementById("button-ls");
-        let button_11 = document.getElementById("button-rs");
+        let button_10 = document.getElementsByName("button-ls");
+        let button_11 = document.getElementsByName("button-rs");
         
-        let ls_horizontal = document.getElementById("ls-horizontal");
-        let ls_vertical = document.getElementById("ls-vertical");
+        let ls_horizontal = document.getElementsByName("ls-horizontal");
+        let ls_vertical = document.getElementsByName("ls-vertical");
         
-        let rs_horizontal = document.getElementById("rs-horizontal");
-        let rs_vertical = document.getElementById("rs-vertical");
+        let rs_horizontal = document.getElementsByName("rs-horizontal");
+        let rs_vertical = document.getElementsByName("rs-vertical");
         
         // D-Pad Variables
         
-        let button_12 = document.getElementById("dpad-up");
-        let button_13 = document.getElementById("dpad-down");
-        let button_14 = document.getElementById("dpad-left");
-        let button_15 = document.getElementById("dpad-right");
+        let button_12 = document.getElementsByName("dpad-up");
+        let button_13 = document.getElementsByName("dpad-down");
+        let button_14 = document.getElementsByName("dpad-left");
+        let button_15 = document.getElementsByName("dpad-right");
         
-        
+        console.log(button_0)
         let buttons = [button_0,button_1,button_2,button_3,button_4,button_5,button_6,button_7,button_8,button_9,button_10,button_11,button_12,button_13,button_14,button_15,button_16,button_17]
         
         setInterval(function checkGamepad()
@@ -105,11 +118,14 @@
 
                 if (gamepads[i].buttons[j].pressed === true) {
                    // buttons[j].textContent = "Pressed"
-                   buttons[j].classList.add("pressed")
+                   buttons[j][0].classList.add("pressed")
+                   buttons[j][1].classList.add("pressed")
+                  // buttons[j][1].innerText = "Pressed"
                 } else {
                    // buttons[j].textContent = "Not Pressed"
-                   buttons[j].classList.remove("pressed")
-                   
+                   buttons[j][0].classList.remove("pressed")
+                   buttons[j][1].classList.remove("pressed")
+                 //  buttons[j][1].innerText = "Not Pressed"
                 }
                 
              }
