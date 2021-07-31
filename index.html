@@ -16,6 +16,7 @@
     <main id="background">
       <div id="controller-select">
         <div id="controllers-selection">
+          <a onclick="select_ps4()">
           <img src="assets/ps4/logo.svg" alt="logo-ps4" width="35px" height="35px">
         </a>
         <a onclick="select_xbox_one()">
@@ -23,11 +24,11 @@
         </a>
         </div>
         <div>
-          <input type="color" id="colorPicker" value="#0000ff">
+          <input type="color" id="colorPicker">
         </div>
       </div>
  
-      <div id="no-controller" class="display alert alert-warning">No controller detected</div>
+      <div id="no-controller" class="display alert alert-danger">No controller detected</div>
       <div id="xbox-one" class="controller xbox-one">
         <div class="triggers">
           <span name="trigger-left" class="trigger left" style: opacity: 0;></span>
@@ -213,5 +214,6 @@
     </main>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="controller.js"></script>
+    <script src="renderer.js"></script>
   </body>
 </html>
