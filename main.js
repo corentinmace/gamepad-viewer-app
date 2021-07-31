@@ -20,7 +20,7 @@ function createWindow () {
   })
  
   mainWindow.loadFile('index.html')
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
 }
 
@@ -51,5 +51,5 @@ ipcMain.handle('sendCookies', async (event) => {
 ipcMain.on('print-color', (event, color) => {
   //console.log(`Color passed from the renderer: ${color}`)
   event.reply('color-status', color)
-  fs.writeFileSync('settings.txt', color, 'utf-8')
+  fs.writeFileSync(`${__dirname}/settings.txt`, color, 'utf-8')
 })
