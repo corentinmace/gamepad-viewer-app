@@ -55,3 +55,7 @@ And here you go, your inputs are now displayed on your stream and you can add a 
 2. Unzip the file
 
 3. Launch the gamepadviewer-app.exe 
+
+___
+
+If you have any problem, feel free to contact me on Discord : Kuha#0001
