@@ -58,4 +58,8 @@ And here you go, your inputs are now displayed on your stream and you can add a 
 
 ___
 
-If you have any problem, feel free to contact me on Discord : Kuha#0001
+## Known Issues
+
+* Controller is not recocgnized if Steam is started (using Steam Input) and the controller is connected using Bluetooth, you can fix it by using your controller wired 
+
+If you have any problem, feel free to join the [Discord](https://discord.gg/nhvh8zeYdX)

@@ -76,7 +76,7 @@
             //   console.log("")
             //   console.log("%c RELOAD", "color: red; font-size: 30px")
             //   console.log(`Player ${i} : ${gamepads[i].id }`);
-            //   //console.log(gamepads[i])
+               //console.log(`Controller ${i} : ${gamepads[i]}`)
             //   console.log("")
             //   console.log("%c BUTTONS", "color: gold; font-size: 20px; font-weight: bold")
             //   console.log("Button Down", gamepads[i].buttons[0])
@@ -109,25 +109,31 @@
             //   console.log("Left Stick Vertical Axis", gamepads[i].axes[3])
             //   console.log("%c ____________________________", "color: red; font-size: 30px")
 
-            buttons[10][0].style.marginLeft = `${gamepads[i].axes[0] * 22}px`
-            buttons[10][0].style.marginTop = `${gamepads[i].axes[1] * 22}px`
-            buttons[10][0].style.transform = `rotateY(${gamepads[i].axes[0] * 22}deg) rotateX(${gamepads[i].axes[1] * -22}deg)`
+            buttons[10][0].style.marginLeft = `${gamepads[0].axes[0] * 22}px`
+            buttons[10][0].style.marginTop = `${gamepads[0].axes[1] * 22}px`
+            buttons[10][0].style.transform = `rotateY(${gamepads[0].axes[0] * 22}deg) rotateX(${gamepads[0].axes[1] * -22}deg)`
 
-            buttons[11][0].style.marginLeft = `${gamepads[i].axes[2] * 22}px`
-            buttons[11][0].style.marginTop = `${gamepads[i].axes[3] * 22}px`
-            buttons[11][0].style.transform = `rotateY(${gamepads[i].axes[2] * 22}deg) rotateX(${gamepads[i].axes[3] * -22}deg)`
+            buttons[11][0].style.marginLeft = `${gamepads[0].axes[2] * 22}px`
+            buttons[11][0].style.marginTop = `${gamepads[0].axes[3] * 22}px`
+            buttons[11][0].style.transform = `rotateY(${gamepads[0].axes[2] * 22}deg) rotateX(${gamepads[0].axes[3] * -22}deg)`
            
-            buttons[10][1].style.marginLeft = `${gamepads[i].axes[0] * 22}px`
-            buttons[10][1].style.marginTop = `${gamepads[i].axes[1] * 22}px`
-            buttons[10][1].style.transform = `rotateY(${gamepads[i].axes[0] * 22}deg) rotateX(${gamepads[i].axes[1] * -22}deg)`
+            buttons[10][1].style.marginLeft = `${gamepads[0].axes[0] * 22}px`
+            buttons[10][1].style.marginTop = `${gamepads[0].axes[1] * 22}px`
+            buttons[10][1].style.transform = `rotateY(${gamepads[0].axes[0] * 22}deg) rotateX(${gamepads[0].axes[1] * -22}deg)`
 
-            buttons[11][1].style.marginLeft = `${gamepads[i].axes[2] * 22}px`
-            buttons[11][1].style.marginTop = `${gamepads[i].axes[3] * 22}px`
-            buttons[11][1].style.transform = `rotateY(${gamepads[i].axes[2] * 22}deg) rotateX(${gamepads[i].axes[3] * -22}deg)`
+            buttons[11][1].style.marginLeft = `${gamepads[0].axes[2] * 22}px`
+            buttons[11][1].style.marginTop = `${gamepads[0].axes[3] * 22}px`
+            buttons[11][1].style.transform = `rotateY(${gamepads[0].axes[2] * 22}deg) rotateX(${gamepads[0].axes[3] * -22}deg)`
+
+            buttons[6][1].style.opacity = gamepads[0].buttons[6].value
+            buttons[7][1].style.opacity = gamepads[0].buttons[7].value
+
+            buttons[6][0].style.opacity = gamepads[0].buttons[6].value
+            buttons[7][0].style.opacity = gamepads[0].buttons[7].value
             
-            for (let j = 0; j < gamepads[i].buttons.length; j++) {
+            for (let j = 0; j < gamepads[0].buttons.length; j++) {
 
-                if (gamepads[i].buttons[j].pressed === true) {
+                if (gamepads[0].buttons[j].pressed === true) {
                     buttons[j][0].classList.add("pressed")
                     buttons[j][1].classList.add("pressed")
                 } else {
