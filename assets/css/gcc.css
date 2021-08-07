@@ -1,0 +1,227 @@
+.controller.gcc {
+    background: url(../gcc/base.svgz) no-repeat;
+    height: 837px;
+    width: 978px;
+}
+
+.gcc .triggers {
+    width: 775px;
+    height: 95px;
+    position: absolute;
+    left: 102px;
+}
+
+.gcc .trigger.left {
+    float: left;
+}
+
+.gc .trigger.right {
+    float: right;
+}
+
+.gcc .trigger.right {
+    float: right;
+}
+
+.gcc .trigger {
+    width: 131px;
+    height: 100%;
+    background: url(../gcc/trigger.svgz);
+    opacity: 0;
+}
+
+.gcc .bumpers {
+    position: absolute;
+    width: 792px;
+    height: 73px;
+    left: 103px;
+    top: 138px;
+}
+
+.gcc .bumper {
+    width: 158px;
+    height: 100%;
+    background: url(../gcc/buttons.svgz) no-repeat;
+    background-position: -358px 0px;
+    opacity: 0;
+}
+
+.gcc .bumper.left {
+    /* -webkit-transform: rotateY(
+180deg
+); */
+    /* transform: rotateY(
+180deg
+); */
+    float: left;
+    display: none;
+}
+
+.gcc.bumper.right {
+    float: right;
+    transform: rotateY(0deg) !important;
+}
+
+.gcc .arrows {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 324px;
+    left: 465px;
+}
+
+.gcc .back, .gcc .start {
+    width: 50px;
+    height: 50px;
+    background: #E7E7E7;
+    border-radius: 100%;
+    border: solid 4.5px rgba(0, 0, 0, .65);
+    background-clip: content-box;
+    opacity: 0;
+}
+
+.gcc .back {
+    display: none;
+}
+
+.gcc .start {
+    float: right;
+}
+
+.gcc .back.pressed, .gcc .start.pressed {
+    opacity: 1;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+.gcc .abxy {
+    position: absolute;
+    width: 288px;
+    height: 230px;
+    top: 207px;
+    left: 640px;
+}
+
+.gcc .button {
+    position: absolute;
+    background: url(../gcc/buttons.svgz);
+    opacity: 0;
+}
+
+.gcc .a {
+    background-position: 0 0;
+    width: 114px;
+    height: 114px;
+    bottom: 35px;
+    left: 91px;
+}
+
+.gcc .b {
+    width: 71px;
+    height: 71px;
+    background-position: -116px 0;
+    bottom: 0px;
+    left: 1px;
+    top: unset;
+    right: unset;
+}
+
+.gcc .x {
+    width: 66px;
+    height: 103px;
+    background-position: -292px 0;
+    top: 65px;
+    right: 0px;
+}
+
+.gcc .y {
+    width: 103px;
+    height: 66px;
+    background-position: -189px 0;
+    left: 67px;
+    top: 2px;
+}
+
+.gcc .sticks {
+    position: absolute;
+    width: 628px;
+    height: 392px;
+    top: 258px;
+    left: 106px;
+}
+
+.gcc .stick.left {
+    top: 24px;
+    left: 23px;
+    background: url(../gcc/left-stick.svgz) center no-repeat;
+    height: 121px;
+    width: 121px;
+}
+
+.gcc .stick.right {
+    top: calc(100% - 127px);
+    left: calc(100% - 125px);
+    background: url(../gcc/cstick.svgz) center no-repeat;
+    width: 84px;
+    height: 84px;
+}
+
+.gcc .dpad {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 497px;
+    left: 263px;
+}
+
+.gcc .face {
+    background: url(../gcc/dpad.svgz) no-repeat;
+    position: absolute;
+    opacity: 0;
+}
+
+.gcc .face.up, .gcc .face.down {
+    width: 44px;
+    height: 65px;
+}
+
+.gcc .face.up {
+    left: 42px;
+    top: 0;
+    background-position: 0px 0px;
+}
+
+.gcc .face.down {
+    left: 42px;
+    bottom: 0;
+    background-position: -46px 0;
+}
+
+.gcc .face.left, .gcc .face.right {
+    width: 65px;
+    height: 44px;
+}
+
+.gcc .face.left {
+    top: 43px;
+    left: 0;
+    background-position: -93px 0;
+}
+
+.gcc .face.right {
+    top: 43px;
+    right: 0px;
+    background-position: -160px 0;
+}
+
+.gcc .bumper.pressed {
+    opacity: 1;
+}
+
+.gcc .button.pressed {
+    opacity: 1;
+}
+
+.gcc .face.pressed {
+    opacity: 1;
+}

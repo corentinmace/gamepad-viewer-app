@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="84px" height="84px" viewBox="0 0 84 84" style="enable-background:new 0 0 84 84;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFDB12;}
+	.st1{opacity:0.45;}
+	.st2{opacity:0.83;}
+	.st3{opacity:0.11;}
+	.st4{opacity:7.000000e-002;fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="C_Stick">
+	<g>
+		<circle class="st0" cx="42" cy="42" r="41.5"/>
+		<g class="st1">
+			<path d="M42,0.5c22.9,0,41.5,18.6,41.5,41.5S64.9,83.5,42,83.5C19.1,83.5,0.5,64.9,0.5,42S19.1,0.5,42,0.5 M42,0
+				C18.8,0,0,18.8,0,42s18.8,42,42,42s42-18.8,42-42S65.2,0,42,0L42,0z"/>
+		</g>
+	</g>
+	<g class="st2">
+		<path class="st3" d="M48.3,31.2v-5.8c-9.1,0-16.5,7.4-16.5,16.5c0,9.1,7.4,16.5,16.5,16.5v-5.8c-5.9,0-10.8-4.8-10.8-10.8
+			S42.3,31.2,48.3,31.2z"/>
+		<path class="st4" d="M48.3,31.2v-5.8c-9.1,0-16.5,7.4-16.5,16.5c0,9.1,7.4,16.5,16.5,16.5v-5.8c-5.9,0-10.8-4.8-10.8-10.8
+			S42.3,31.2,48.3,31.2z"/>
+	</g>
+</g>
+</svg>

@@ -1,6 +1,70 @@
-const { app, BrowserWindow, session, ipcMain } = require("electron")
+const { app, BrowserWindow, Menu, ipcMain } = require("electron")
 const path = require('path')
 const fs = require('fs')
+const isMac = process.platform === 'darwin'
+
+const template = [
+  // { role: 'appMenu' }
+  ...(isMac ? [{
+    label: app.name,
+    submenu: [
+      { role: 'about' },
+      { type: 'separator' },
+      { role: 'services' },
+      { type: 'separator' },
+      { role: 'hide' },
+      { role: 'hideothers' },
+      { role: 'unhide' },
+      { type: 'separator' },
+      { role: 'quit' }
+    ]
+  }] : []),
+  // { role: 'windowMenu' }
+  {
+    label: 'Window',
+    submenu: [
+      { role: 'minimize' },
+      ...(isMac ? [
+        { type: 'separator' },
+        { role: 'front' },
+        { type: 'separator' },
+        { role: 'window' }
+      ] : [
+        { role: 'close' }
+      ])
+    ]
+  },
+  {
+    role: 'help',
+    submenu: [
+      {
+        label: 'Join Discord',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://discord.com/invite/nhvh8zeYdX')
+        }
+      },
+      {
+        label: 'Github',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://github.com/corentinmace/gamepad-viewer-app')
+        }
+      },
+      {
+        label: 'About ElectronJS',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://electronjs.org')
+        }
+      }
+
+    ]
+  }
+]
+
+const menu = Menu.buildFromTemplate(template)
+Menu.setApplicationMenu(menu)
 
 let mainWindow
 let backgroundColorSet
@@ -10,8 +74,8 @@ function createWindow () {
    mainWindow = new BrowserWindow({
     titleBarStyle: 'show',
     icon: 'favicon.ico',
-    width: 900,
-    height: 800,
+    width: 1000,
+    height: 1000,
     resizable: false,
     alwaysOnTop: false,
     webPreferences: {
@@ -20,7 +84,7 @@ function createWindow () {
   })
  
   mainWindow.loadFile('index.html')
-  //mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
 }
 
