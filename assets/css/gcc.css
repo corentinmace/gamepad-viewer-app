@@ -1,5 +1,5 @@
 .controller.gcc {
-    background: url(../gcc/base.svgz) no-repeat;
+    background: url(../layouts/gcc/base.svgz) no-repeat;
     height: 837px;
     width: 978px;
 }
@@ -26,7 +26,7 @@
 .gcc .trigger {
     width: 131px;
     height: 100%;
-    background: url(../gcc/trigger.svgz);
+    background: url(../layouts/gcc/trigger.svgz);
     opacity: 0;
 }
 
@@ -41,7 +41,7 @@
 .gcc .bumper {
     width: 158px;
     height: 100%;
-    background: url(../gcc/buttons.svgz) no-repeat;
+    background: url(../layouts/gcc/buttons.svgz) no-repeat;
     background-position: -358px 0px;
     opacity: 0;
 }
@@ -104,7 +104,7 @@
 
 .gcc .button {
     position: absolute;
-    background: url(../gcc/buttons.svgz);
+    background: url(../layouts/gcc/buttons.svgz);
     opacity: 0;
 }
 
@@ -153,7 +153,7 @@
 .gcc .stick.left {
     top: 24px;
     left: 23px;
-    background: url(../gcc/left-stick.svgz) center no-repeat;
+    background: url(../layouts/gcc/left-stick.svgz) center no-repeat;
     height: 121px;
     width: 121px;
 }
@@ -161,7 +161,7 @@
 .gcc .stick.right {
     top: calc(100% - 127px);
     left: calc(100% - 125px);
-    background: url(../gcc/cstick.svgz) center no-repeat;
+    background: url(../layouts/gcc/cstick.svgz) center no-repeat;
     width: 84px;
     height: 84px;
 }

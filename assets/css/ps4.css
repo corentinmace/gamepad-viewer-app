@@ -1,5 +1,5 @@
 .controller.ps4 {
-    background: url(../ps4/base.svgz);
+    background: url(../layouts/ps4/base.svgz);
     height: 598px;
     width: 806px;
 }
@@ -23,7 +23,7 @@
 .trigger {
     width: 99px;
     height: 100%;
-    background: url(../ps4/triggers.svgz);
+    background: url(../layouts/ps4/triggers.svgz);
     opacity: 0;
 }
 
@@ -38,7 +38,7 @@
 .bumper {
     width: 99px;
     height: 23px;
-    background: url(../ps4/bumper.svgz) no-repeat;
+    background: url(../layouts/ps4/bumper.svgz) no-repeat;
     opacity: 0;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .touchpad.pressed {
-    background: url(../ps4/touchpad.svgz) no-repeat center;
+    background: url(../layouts/ps4/touchpad.svgz) no-repeat center;
 }
 
 .meta {
@@ -72,7 +72,7 @@
 }
 
 .meta.pressed {
-    background: url(../ps4/meta.svgz) no-repeat center;
+    background: url(../layouts/ps4/meta.svgz) no-repeat center;
 }
 
 .arrows {
@@ -93,7 +93,7 @@
 }
 
 .back, .start {
-    background: url(../ps4/start.svgz);
+    background: url(../layouts/ps4/start.svgz);
     width: 28px;
     height: 46px;
     opacity: 0;
@@ -111,7 +111,7 @@
     position: absolute;
     width: 55px;
     height: 55px;
-    background: url(../ps4/face.svgz);
+    background: url(../layouts/ps4/face.svgz);
 }
 
 .button.pressed {
@@ -150,7 +150,7 @@
 
 .stick {
     position: absolute;
-    background: url(../ps4/sticks.svgz);
+    background: url(../layouts/ps4/sticks.svgz);
     height: 94px;
     width: 94px;
 }
@@ -182,7 +182,7 @@
 }
 
 .face {
-    background: url(../ps4/dpad.svgz);
+    background: url(../layouts/ps4/dpad.svgz);
     position: absolute;
 }
 

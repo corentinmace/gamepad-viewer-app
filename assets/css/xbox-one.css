@@ -1,5 +1,5 @@
 .controller.xbox-one{
-    background: url(../xbox-one/base.svgz);
+    background: url(../layouts/xbox-one/base.svgz);
     height: 630px;
     width: 750px;
 }
@@ -14,7 +14,7 @@
 .xbox-one .trigger {
     width: 88px;
     height: 121px;
-    background: url(../xbox-one/trigger.svgz);
+    background: url(../layouts/xbox-one/trigger.svgz);
 
 }
 
@@ -39,7 +39,7 @@
 .xbox-one .bumper {
     width: 170px;
     height: 61px;
-    background: url(../xbox-one/bumper.svgz);
+    background: url(../layouts/xbox-one/bumper.svgz);
 }
 
 .xbox-one .bumper.left {
@@ -59,7 +59,7 @@
 
 .xbox-one .quadrant {
     position: absolute;
-    background: url(../xbox-one/quadrant.svgz);
+    background: url(../layouts/xbox-one/quadrant.svgz);
     height: 45px;
     width: 45px;
     top: 258px;
@@ -85,7 +85,7 @@
 }
 
 .xbox-one .back, .xbox-one .start {
-    background: url(../xbox-one/start-select.svgz);
+    background: url(../layouts/xbox-one/start-select.svgz);
     width: 33px;
     height: 33px;
 }
@@ -100,7 +100,7 @@
 
 .xbox-one .button {
     position: absolute;
-    background: url(../xbox-one/abxy.svgz);
+    background: url(../layouts/xbox-one/abxy.svgz);
     width: 48px;
     height: 48px;
 }
@@ -155,7 +155,7 @@
 
 .xbox-one .stick {
     position: absolute;
-    background: url(../xbox-one/stick.svgz);
+    background: url(../layouts/xbox-one/stick.svgz);
     background-position: -85px 0;
     height: 83px;
     width: 83px;
@@ -174,7 +174,7 @@
 }
 
 .xbox-one .face {
-    background: url(../xbox-one/dpad.svgz);
+    background: url(../layouts/xbox-one/dpad.svgz);
     position: absolute;
     opacity: 0;
 }

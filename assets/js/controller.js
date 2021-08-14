@@ -28,16 +28,7 @@
             console.log(event.gamepad);
         });
 
-        // function select_ps4() {
-        //     ps4_controller.classList.add("display")
-        //     xboxone_controller.classList.remove("display")
-        // }
-
-        // function select_xbox_one() {
-        //     ps4_controller.classList.remove("display")
-        //     xboxone_controller.classList.add("display")
-        // }
-
+        //Controllers variables
 
         let no_controller = document.getElementById("no-controller")
         let controller_select = document.getElementById("controller-select")
@@ -85,14 +76,11 @@
         let selectList = document.getElementById("player_select")
         
         let backgroundApp = document.getElementById("background")
-
-        let test_gps = navigator.getGamepads();
         
         setInterval(function checkGamepad()
         {
 
             document.getElementById('controllers-selection').addEventListener('changed', function(e){
-                //console.log(iconSelect.getSelectedValue())
                 switch (iconSelect.getSelectedValue()) {
                     case "ps4":
                         ps4_controller.classList.add("display")
@@ -128,43 +116,7 @@
             });
 
             let gamepads = navigator.getGamepads();
-                    //console.log(gamepads[1].axes[10])
-                //                     console.log("")
-                //   console.log("%c RELOAD", "color: red; font-size: 30px")
-                //   console.log(`Player ${controller_index} : ${gamepads[controller_index].id }`);
-                // console.log(`Controller ${controller_index} : ${gamepads[controller_index]}`)
-                //   console.log("")
-                //   console.log("%c BUTTONS", "color: gold; font-size: 20px; font-weight: bold")
-                //   console.log("Button Down", gamepads[controller_index].buttons[0])
-                //   console.log("Button Right", gamepads[controller_index].buttons[1])
-                //   console.log("Button Up", gamepads[controller_index].buttons[2])
-                //   console.log("Button Left", gamepads[controller_index].buttons[3])
-                //   console.log("Bumper Left", gamepads[controller_index].buttons[4])
-                //   console.log("Bumper Right", gamepads[controller_index].buttons[5])
-                //   console.log("Trigger Left", gamepads[controller_index].buttons[6])
-                //   console.log("Trigger Right", gamepads[controller_index].buttons[7])
-                //   console.log("Start", gamepads[controller_index].buttons[8])
-                //   console.log("Select", gamepads[controller_index].buttons[9])
-                //   console.log("Left Stick Button", gamepads[controller_index].buttons[10])
-                //   console.log("Right Stick Button", gamepads[controller_index].buttons[11])
-                //   console.log("(Layout Switch) Home", gamepads[controller_index].buttons[16])
-                //   console.log("(Layout Switch) Screenshot", gamepads[controller_index].buttons[17])
-                //   console.log("")
-                //   console.log("%c D-PAD", "color: gold; font-size: 20px; font-weight: bold")
-                //   console.log("D-Pad Up", gamepads[controller_index].buttons[12])
-                //   console.log("D-Pad Down", gamepads[controller_index].buttons[13])
-                //   console.log("D-Pad Left", gamepads[controller_index].buttons[14])
-                //   console.log("D-Pad Right", gamepads[controller_index].buttons[15])
-                //   console.log("")
-                //   console.log("%c STICKS", "color: gold; font-size: 20px; font-weight: bold")
-                //   console.log("(-1 = Left, 0 = Neutral, 1 = Right)")
-                //   console.log("(-1 = Up, 0 = Neutral, 1 = Down)")
-                //   console.log("Left Stick Horizontal Axis", gamepads[controller_index].axes[0])
-                //   console.log("Left Stick Vertical Axis", gamepads[controller_index].axes[1])
-                //   console.log("Right Stick Horizontal Axis", gamepads[controller_index].axes[2])
-                //   console.log("Left Stick Vertical Axis", gamepads[controller_index].axes[3])
-                //   console.log("%c ____________________________", "color: red; font-size: 30px")
-
+         
                     if (gamepads[controller_index] !== null) {
                         //XBOX ONE
                         buttons[10][0].style.marginLeft = `${gamepads[controller_index].axes[0] * 22}px`
@@ -233,7 +185,3 @@
            backgroundApp.style.backgroundColor = document.getElementById("colorPicker").value
         }, 16.7)
         // 16.7ms = 1 frame
-
-
-
-

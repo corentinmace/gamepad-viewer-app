@@ -1,5 +1,5 @@
 .controller.procon {
-    background: url(../procon/base.svg);
+    background: url(../layouts/procon/base.svg);
     height: 800px;
     width: 800px;
 }
@@ -15,7 +15,7 @@
 .procon .bumper {
     width: 99px;
     height: 23px;
-    background: url(../procon/bumper.svg) no-repeat;
+    background: url(../layouts/procon/bumper.svg) no-repeat;
     opacity: 1;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .procon .face {
-    background: url(../procon/dpad.svg);
+    background: url(../layouts/procon/dpad.svg);
     position: absolute;
     opacity: 0;
 }
@@ -97,7 +97,7 @@
 
 .procon .stick {
     position: absolute;
-    background: url(../procon/sticks.png);
+    background: url(../layouts/procon/sticks.png);
     background-position: 0px 0;
     height: 95px;
     width: 95px;
