@@ -1,0 +1,112 @@
+.controller.procon {
+    background: url(../procon/base.svg);
+    height: 800px;
+    width: 800px;
+}
+
+.procon .bumpers {
+    position: absolute;
+    width: 588px;
+    height: 23px;
+    left: 109px;
+    top: 94px;
+}
+
+.procon .bumper {
+    width: 99px;
+    height: 23px;
+    background: url(../procon/bumper.svg) no-repeat;
+    opacity: 1;
+}
+
+.procon .bumper.left {
+    float: left;
+}
+
+.procon .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.procon .dpad {
+    position: absolute;
+    width: 110px;
+    height: 111px;
+    top: 345px;
+    left: 223px;
+}
+
+.procon .face {
+    background: url(../procon/dpad.svg);
+    position: absolute;
+    opacity: 0;
+}
+
+.procon .face.up {
+    background-position: 34px 0;
+    left: 38px;
+    top: 0px;
+    width: 34px;
+    height: 56px;
+}
+
+.procon .face.down {
+    left: 38px;
+    bottom: 0;
+    width: 34px;
+    height: 56px;
+}
+
+.procon .face.left {
+    background-position: 0 -93px;
+    width: 55px;
+    height: 35px;
+    top: 38px;
+    left: 0;
+}
+
+.procon .face.right {
+    background-position: 0 -57px;
+    width: 55px;
+    height: 35px;
+    top: 38px;
+    right: 0;
+}
+
+.procon .face.pressed {
+    opacity: 1;
+}
+
+.procon .sticks {
+    position: absolute;
+    width: 421px;
+    height: 210px;
+    top: 242px;
+    left: 134px;
+}
+
+.procon .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.procon .stick.right {
+    top: 110px;
+    left: 324px;
+}
+
+.procon .stick {
+    position: absolute;
+    background: url(../procon/sticks.png);
+    background-position: 0px 0;
+    height: 95px;
+    width: 95px;
+}
+
+.procon .stick.left.pressed {
+    background-position: 190px 0;
+}
+
+.procon .stick.right.pressed {
+    background-position: 94px 0;
+}

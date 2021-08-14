@@ -44,6 +44,7 @@
         let ps4_controller = document.getElementById("ps4");
         let xboxone_controller = document.getElementById("xbox-one")
         let gc_controller = document.getElementById("gcc")
+        let pro_controller = document.getElementById("procon")
         
         // Buttons Variables 
         
@@ -96,21 +97,31 @@
                     case "ps4":
                         ps4_controller.classList.add("display")
                         xboxone_controller.classList.remove("display")
-                        gc_controller.classList.remove("display")          
+                        gc_controller.classList.remove("display")
+                        pro_controller.classList.remove("display")          
                         break;
                     
                     case "xboxone":
                         xboxone_controller.classList.add("display")
                         ps4_controller.classList.remove("display")
-                        gc_controller.classList.remove("display") 
+                        gc_controller.classList.remove("display")
+                        pro_controller.classList.remove("display")
                         break;
 
                     case "gcc":
                         gc_controller.classList.add("display") 
                         xboxone_controller.classList.remove("display")
                         ps4_controller.classList.remove("display")
+                        pro_controller.classList.remove("display")
                         break;
-                
+                    
+                    case "procon":
+                        pro_controller.classList.add("display")
+                        gc_controller.classList.remove("display") 
+                        xboxone_controller.classList.remove("display")
+                        ps4_controller.classList.remove("display")
+                        break;
+
                     default:
                         break;
                 }
@@ -155,6 +166,7 @@
                 //   console.log("%c ____________________________", "color: red; font-size: 30px")
 
                     if (gamepads[controller_index] !== null) {
+                        //XBOX ONE
                         buttons[10][0].style.marginLeft = `${gamepads[controller_index].axes[0] * 22}px`
                         buttons[10][0].style.marginTop = `${gamepads[controller_index].axes[1] * 22}px`
                         buttons[10][0].style.transform = `rotateY(${gamepads[controller_index].axes[0] * 22}deg) rotateX(${gamepads[controller_index].axes[1] * -22}deg)`
@@ -165,7 +177,8 @@
                         
                         buttons[6][0].style.opacity = gamepads[controller_index].buttons[6].value
                         buttons[7][0].style.opacity = gamepads[controller_index].buttons[7].value
-                    
+                        
+                        //PS4
                         buttons[10][1].style.marginLeft = `${gamepads[controller_index].axes[0] * 22}px`
                         buttons[10][1].style.marginTop = `${gamepads[controller_index].axes[1] * 22}px`
                         buttons[10][1].style.transform = `rotateY(${gamepads[controller_index].axes[0] * 22}deg) rotateX(${gamepads[controller_index].axes[1] * -22}deg)`
@@ -176,6 +189,18 @@
                         
                         buttons[6][1].style.opacity = gamepads[controller_index].buttons[6].value
                         buttons[7][1].style.opacity = gamepads[controller_index].buttons[7].value
+
+                        //PROCON
+                        buttons[10][3].style.marginLeft = `${gamepads[controller_index].axes[0] * 22}px`
+                        buttons[10][3].style.marginTop = `${gamepads[controller_index].axes[1] * 22}px`
+                        buttons[10][3].style.transform = `rotateY(${gamepads[controller_index].axes[0] * 22}deg) rotateX(${gamepads[controller_index].axes[1] * -22}deg)`
+    
+                        buttons[11][3].style.marginLeft = `${gamepads[controller_index].axes[2] * 22}px`
+                        buttons[11][3].style.marginTop = `${gamepads[controller_index].axes[3] * 22}px`
+                        buttons[11][3].style.transform = `rotateY(${gamepads[controller_index].axes[2] * 22}deg) rotateX(${gamepads[controller_index].axes[3] * -22}deg)`
+                        
+                        buttons[6][3].style.opacity = gamepads[controller_index].buttons[6].value
+                        buttons[7][3].style.opacity = gamepads[controller_index].buttons[7].value
 
                         //GCC
                         buttons[10][2].style.marginLeft = `${gamepads[controller_index].axes[0] * 22}px`
@@ -195,10 +220,12 @@
                                 buttons[j][0].classList.add("pressed")
                                 buttons[j][1].classList.add("pressed")
                                 buttons[j][2].classList.add("pressed")
+                                buttons[j][3].classList.add("pressed")
                             } else {
                                 buttons[j][0].classList.remove("pressed")
                                 buttons[j][1].classList.remove("pressed")
                                 buttons[j][2].classList.remove("pressed")
+                                buttons[j][3].classList.remove("pressed")
                             }   
                         }
                     }
