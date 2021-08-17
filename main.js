@@ -35,7 +35,7 @@ const template = [
     ]
   },
   {
-    role: 'help',
+    role: 'Help',
     submenu: [
       {
         label: 'Join Discord',
@@ -48,7 +48,7 @@ const template = [
         label: 'Github',
         click: async () => {
           const { shell } = require('electron')
-          await shell.openExternal('https://github.com/corentinmace/gamepad-viewer-app')
+          await shell.openExternal('https://github.com/corentinmace/tournament-tweet-tool')
         }
       },
       {
@@ -94,13 +94,10 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 
-  fs.readFile(`${__dirname}/settings.txt`, 'utf8' , (err, data) => {
-    if (err) {
-      console.error(err)
-      return
-    }
-    backgroundColorSet = data
-  })
+  let rawsettings = fs.readFileSync('settings.json');
+  let settings = JSON.parse(rawsettings);
+  console.log(settings.color)
+  backgroundColorSet = settings.color
 })
 
 app.on('window-all-closed', function () {
@@ -115,5 +112,8 @@ ipcMain.handle('sendCookies', async (event) => {
 ipcMain.on('print-color', (event, color) => {
   //console.log(`Color passed from the renderer: ${color}`)
   event.reply('color-status', color)
-  fs.writeFileSync(`${__dirname}/settings.txt`, color, 'utf-8')
+  let color_setting = {
+    color: color
+  }
+  fs.writeFileSync(`${__dirname}/settings.json`, JSON.stringify(color_setting, null, 4), 'utf-8')
 })
