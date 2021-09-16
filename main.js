@@ -84,7 +84,7 @@ function createWindow () {
   })
  
   mainWindow.loadFile('index.html')
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
 }
 
@@ -94,7 +94,7 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 
-  let rawsettings = fs.readFileSync('settings.json');
+  let rawsettings = fs.readFileSync(`${__dirname}/settings.json`);
   let settings = JSON.parse(rawsettings);
   console.log(settings.color)
   backgroundColorSet = settings.color
