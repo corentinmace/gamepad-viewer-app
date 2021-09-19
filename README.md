@@ -60,6 +60,6 @@ ___
 
 ## Known Issues
 
-* Controller is not recocgnized if Steam is started (using Steam Input) and the controller is connected using Bluetooth, you can fix it by using your controller wired 
+* None for now.
 
 If you have any problem, feel free to join the [Discord](https://discord.gg/nhvh8zeYdX)
