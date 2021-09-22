@@ -46,8 +46,6 @@ And here you go, your inputs are now displayed on your stream and you can add a 
 
 
 
-
-
 ## Installing
 
 1. Go to the [release page](https://github.com/corentinmace/gamepad-viewer-app/releases/latest) and download the latest version of the app
