@@ -60,4 +60,4 @@ ___
 
 * None for now.
 
-If you have any problem, feel free to join the [Discord](https://discord.gg/nhvh8zeYdX)
+If you have any problem, feel free to join the [Discord](https://discord.gg/E9Dwgd8Vdu)
